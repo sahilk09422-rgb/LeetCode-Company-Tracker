@@ -13,3 +13,9 @@ def health():
     return {
         "status": "Backend is running"
     }
+
+@app.get("/companies")
+def get_companies():
+    return {
+        "companies": ["Google", "Microsoft", "Amazon"]
+    }
